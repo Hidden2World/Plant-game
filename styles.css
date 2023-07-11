@@ -1,0 +1,50 @@
+
+
+#grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/grass.jpg);
+}
+
+#grid {
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 8px;
+    width: 600px;
+    height: 600px;
+    
+    z-index: 2;
+    
+    
+}
+
+.cell {
+    background-color: rgb(138, 94, 0);
+    z-index: 2;
+    
+}
+
+.initial {
+    transition: transform 0s;
+    background-color: #ccc;
+    z-index: 2;
+}
+
+.fully-grown {
+    cursor: pointer;
+    z-index: 2;
+}
+
+#score {
+    position: fixed;
+    z-index: 50;
+    top: 2%;
+    left: 44%;
+    font-size: 60px;
+    font-weight: 100;
+}
+
